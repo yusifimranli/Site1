@@ -179,6 +179,7 @@
 
 footer{
     text-align: center;
+    padding: 30px 0;
 }
 
 
@@ -257,4 +258,10 @@ ul li a{
         margin: 0 auto;
         padding: 35px;
     }
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid blue;
+}
 } 

@@ -66,6 +66,6 @@ form.addEventListener("submit", function(e){
     if(name !== "" && emailCheck.test(email) && message !== ""){
     alert("Mesaj uğurla göndərildi");
     form.reset();
-}
+    }
 
 });
