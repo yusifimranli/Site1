@@ -10,23 +10,32 @@
     <title>NovaTech</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <!-- mobil -->
-            <div class="mobil-container">
+            <div class="mobil-container" >
                 <a href="#" class="logo">Nova Tech</a>
                     <button class="menu-btn" aria-label="Open navigation menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>     
+                        <i onclick="showmenu()" class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul id="menu">
+
+                        <li class="close-btn">
+                            <i onclick="showmenu()" class="fa-solid fa-xmark"></i>
+                        </li>
+                        <li><a href="#about">Haqqımızda</a></li>
+                        <li><a href="#gallery">Qalereya</a></li>
+                        <li><a href="#contact">Əlaqə</a></li>
+                    </ul>     
             </div>
 
             <!-- desktop -->
             <div class="desktop-container">
                 <a href="#" class="logo">Nova Tech</a>
                 <ul>
-                    <li><a href="#">Haqqımızda</a></li>
-                    <li><a href="#">Qalereya</a></li>
-                    <li><a href="#">Əlaqə</a></li>
+                    <li><a href="#about">Haqqımızda</a></li>
+                    <li><a href="#gallery">Qalereya</a></li>
+                    <li><a href="#contact">Əlaqə</a></li>
                 </ul>
             </div>
 
@@ -135,5 +144,7 @@
 <footer>
     <p>&copy; 2026 Nova Tech. All rights reserved.</p>
 </footer>
+<script src="js/Menu.js"></script>
+<script src="js/App.js"></script>
 </body>
 </html>

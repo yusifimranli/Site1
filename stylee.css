@@ -1,9 +1,39 @@
+#header{
+    width: 100%;
+    padding: 10px 0;
+}
+#header.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
 .mobil-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     font-size: 22px;
+}
+#menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 200px;
+    height: 350px;
+    background: #2563eb;
+    color: white;
+    transition: .6s;
+    padding: 30px 30px;
+    border-radius: 0 20px 20px 0 ;
+}
+.close-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    list-style: none;
 }
 .desktop-container{
     display: none;
@@ -141,6 +171,8 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+
 
 footer{
     text-align: center;
