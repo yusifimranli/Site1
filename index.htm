@@ -47,7 +47,7 @@
             <section id="hero">
                 <h1>Rəqəmsal Dünyada Sizin Güvənli Tərəfdaşınız</h1>
                 <p>Biz biznesiniz üçün ən innovativ web və mobil həlləri sıfırdan hazırlayırıq</p>
-                <button>Bizimlə Əlaqə</button>
+                <a href="#contact">Bizimlə Əlaqə</a>
             </section>
 
             <section id="about">
@@ -102,7 +102,7 @@
                 <h2>Bizimlə Əlaqə</h2>
 
                 <div class="contact-container">
-                    <form>
+                    <form id="form">
 
                         <div class="form-group">
                             <label for="name">Ad və Soyad *</label>
@@ -110,8 +110,9 @@
                                 type="text"
                                 id="name"
                                 placeholder="Əli Məmmədov"
-                                required
+                                
                             >
+                            <p id="nameError"></p>
                         </div>
 
                         <div class="form-group">
@@ -120,8 +121,9 @@
                                 type="email"
                                 id="email"
                                 placeholder="mammadov.ali.professional-developer@company-domain.az"
-                                required
+                                
                             >
+                            <p id="emailError"></p>
                         </div>
 
                         <div class="form-group">
@@ -129,8 +131,9 @@
                             <textarea
                                 id="message"
                                 placeholder="Layihəniz barədə qısa məlumat..."
-                                required
+                                
                             ></textarea>
+                            <p id="messageError"></p>
                         </div>
 
                         <button type="submit">Göndər</button>
