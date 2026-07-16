@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +10,32 @@
     <title>NovaTech</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <!-- mobil -->
-            <div class="mobil-container">
+            <div class="mobil-container" >
                 <a href="#" class="logo">Nova Tech</a>
-                    <button class="menu-btn" aria-label="Open navigation menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>     
+                    <button class="menu-btn" aria-label="Menyunu aç">
+                        <i onclick="showmenu()" class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul id="menu">
+
+                        <li class="close-btn">
+                            <i onclick="showmenu()" class="fa-solid fa-xmark"></i>
+                        </li>
+                        <li><a href="#about">Haqqımızda</a></li>
+                        <li><a href="#gallery">Qalereya</a></li>
+                        <li><a href="#contact">Əlaqə</a></li>
+                    </ul>     
             </div>
 
             <!-- desktop -->
             <div class="desktop-container">
-                <a href="#" class="logo">Nova Tech</a>
+                <a href="#hero" class="logo">Nova Tech</a>
                 <ul>
-                    <li><a href="#">Haqqımızda</a></li>
-                    <li><a href="#">Qalereya</a></li>
-                    <li><a href="#">Əlaqə</a></li>
+                    <li><a href="#about">Haqqımızda</a></li>
+                    <li><a href="#gallery">Qalereya</a></li>
+                    <li><a href="#contact">Əlaqə</a></li>
                 </ul>
             </div>
 
@@ -38,7 +47,7 @@
             <section id="hero">
                 <h1>Rəqəmsal Dünyada Sizin Güvənli Tərəfdaşınız</h1>
                 <p>Biz biznesiniz üçün ən innovativ web və mobil həlləri sıfırdan hazırlayırıq</p>
-                <button>Bizimlə Əlaqə</button>
+                <a href="#contact">Bizimlə Əlaqə</a>
             </section>
 
             <section id="about">
@@ -93,7 +102,7 @@
                 <h2>Bizimlə Əlaqə</h2>
 
                 <div class="contact-container">
-                    <form>
+                    <form id="form">
 
                         <div class="form-group">
                             <label for="name">Ad və Soyad *</label>
@@ -101,8 +110,9 @@
                                 type="text"
                                 id="name"
                                 placeholder="Əli Məmmədov"
-                                required
+                                
                             >
+                            <p id="nameError"></p>
                         </div>
 
                         <div class="form-group">
@@ -111,8 +121,9 @@
                                 type="email"
                                 id="email"
                                 placeholder="mammadov.ali.professional-developer@company-domain.az"
-                                required
+                                
                             >
+                            <p id="emailError"></p>
                         </div>
 
                         <div class="form-group">
@@ -120,8 +131,9 @@
                             <textarea
                                 id="message"
                                 placeholder="Layihəniz barədə qısa məlumat..."
-                                required
+                                
                             ></textarea>
+                            <p id="messageError"></p>
                         </div>
 
                         <button type="submit">Göndər</button>
@@ -135,5 +147,7 @@
 <footer>
     <p>&copy; 2026 Nova Tech. All rights reserved.</p>
 </footer>
+<script src="js/Menu.js"></script>
+<script src="js/App.js"></script>
 </body>
 </html>
